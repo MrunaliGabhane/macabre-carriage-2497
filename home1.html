@@ -229,17 +229,22 @@
         margin: auto;
         padding: 50px;
       }
+      #containerMainImg img{
+        width: 100%;
+        height: auto;
+      }
       #imgcontainer{
-        width: 90%;
+        width: 80%;
         margin: auto;
-        display : grid;
+        display : flex;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: auto;
         border: 1px solid black;
+        justify-content: space-between;
 
       }
       #imgcontainer div{
-        width: 80%;
+         width: 20%;
         height: auto;
         border: 1px solid red
       }
