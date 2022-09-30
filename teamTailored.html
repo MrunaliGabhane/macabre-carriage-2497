@@ -292,6 +292,15 @@
         border: 1px solid rgb(39, 37, 37);
         background-color: #eeeeee;
     }
+    #teamTail{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+
+    }
+    #teamTail>div>a>img{
+        width: 100%;
+    }
    </style>
 </head>
 <body>
@@ -372,7 +381,7 @@
         <div class="btm">
             <a href="marketplace.html">Marketplace</a>
         </div>
-    </div>
+    </div>t
     <div id="dis1">
         <div id="discount">
             <h3>UP TO 50% OFF COSY GARMS</h3>
@@ -443,6 +452,9 @@
         <div></div>
         <div></div> -->
     </div>
+       <div id="teamTail">
+
+       </div>
     <section id="footer">
         <div id="bottom">
             <div>
@@ -504,3 +516,166 @@
     </section>
 </body>
 </html>
+
+<script>
+    let womenData=[
+        { 
+            id:1,
+            img_url: "https://images.asos-media.com/products/asos-design-oversized-swing-grandad-blazer-in-magenta/203208418-1-magenta?$n_320w$&wid=317&fit=constrain",
+            disc:"ASOS DESIGN oversized swing grandad blazer in magenta",
+            price:"£72.00",
+        },
+        {
+            id:2,
+            img_url:"https://images.asos-media.com/products/asos-design-tiger-printed-nipped-waist-blazer/202746017-1-multi?$n_320w$&wid=317&fit=constrain",
+            disc:"ASOS DESIGN tiger printed nipped waist blazer",
+            price:"£78.00",
+        },
+        {
+            id: 3,
+            img_url:"https://images.asos-media.com/products/asos-design-diamante-corset-detail-blazer-in-oyster/202062791-1-oyster?$n_320w$&wid=317&fit=constrain",
+            disc:"ASOS DESIGN diamante corset detail blazer in oyster",
+            price:"£88.00",
+        },
+        {
+            id: 4,
+            img_url:"https://images.asos-media.com/products/yas-bridal-high-waisted-wide-leg-co-ord-trouser-in-white/202084460-1-starwhite?$n_320w$&wid=317&fit=constrain",
+            disc:"Y.A.S bridal high waisted wide leg co -ord trouser in white",
+            price:"£69.00",
+        },
+        {
+            id: 5,
+            img_url:"https://images.asos-media.com/products/yas-bridal-satin-blazer-co-ord-in-white/202086210-1-starwhite?$n_320w$&wid=317&fit=constrain",
+            disc:"Y.A.S Bridal satin blazer co-ord in white",
+            price:"£74.00",
+        },
+        {
+            id:6 ,
+            img_url:"https://images.asos-media.com/products/asos-design-cropped-suit-jacket-in-washed-lime/200503106-1-washedlime?$n_320w$&wid=317&fit=constrain",
+            disc:"ASOS DESIGN cropped suit jacket in washed lime",
+            price:"£60.00",
+        },
+        {
+            id: 7,
+            img_url:"https://images.asos-media.com/products/asos-design-slouchy-wide-leg-suit-trouser-in-washed-lime/200503047-1-washedlime?$n_480w$&wid=476&fit=constrain",
+            disc:"ASOS DESIGN slouchy wide leg suit trouser in washed lime",
+            price:"£38.00",
+        },
+        {
+            id: 8,
+            img_url:"https://images.asos-media.com/products/asos-design-jersey-suit-split-sleeve-tux-blazer-in-electric-blue/202738935-1-electricblue?$n_480w$&wid=476&fit=constrain",
+            disc:"",
+            price:"£",
+        },
+        {
+            id:9 ,
+            img_url:"https://images.asos-media.com/products/asos-design-boxy-oversized-grandad-blazer-in-sage/203222037-1-sage?$n_480w$&wid=476&fit=constrain",
+            disc:"ASOS DESIGN boxy oversized grandad blazer in sage",
+            price:"£42.00",
+            
+        },
+        {
+            id:10 ,
+            img_url:"https://images.asos-media.com/products/asos-design-boxy-oversized-grandad-blazer-in-sage/203222037-1-sage?$n_480w$&wid=476&fit=constrain",
+            disc:"ASOS DESIGN boxy oversized grandad blazer in bright pink",
+            price:"£42.00",
+        },
+        {
+            id: 11,
+            img_url:"https://images.asos-media.com/products/asos-design-jersey-pop-sculpted-suit-blazer-in-coral/201949777-1-coral?$n_480w$&wid=476&fit=constrain",
+            disc:"ASOS DESIGN jersey pop sculpted suit blazer in coral",
+            price:"£42.50",
+        },
+        {
+            id:12 ,
+            img_url:"https://images.asos-media.com/products/asos-design-oversized-swing-grandad-blazer-in-beige/203208137-1-beige?$n_480w$&wid=476&fit=constrain",
+            disc:"ASOS DESIGN oversized swing grandad blazer in beige",
+            price:"£61.50",
+        },
+        {
+            id:13 ,
+            img_url:"https://images.asos-media.com/products/topshop-co-ord-oversized-single-breasted-blazer-in-sage/203164462-1-sage?$n_480w$&wid=476&fit=constrain",
+            disc:"Topshop co-ord oversized single breasted blazer in sage",
+            price:"£63.00",
+        },
+        {
+            id:14 ,
+            img_url:"https://images.asos-media.com/products/river-island-structured-blazer-in-navy/203970110-1-navy?$n_480w$&wid=476&fit=constrain",
+            disc:"River Island structured blazer in navy",
+            price:"£79.00",
+        },
+        {
+            id: 15,
+            img_url:"https://images.asos-media.com/products/jdy-cropped-blazer-co-ord-in-stone/202791293-1-stone?$n_480w$&wid=476&fit=constrain",
+            disc:"JDY cropped blazer co-ord in stone",
+            price:"£27.00",
+        },
+        {
+            id: 16,
+            img_url:"https://images.asos-media.com/products/extro-vert-cropped-blazer-top-in-black-co-ord/202900637-1-black?$n_480w$&wid=476&fit=constrain",
+            disc:"Extro & Vert cropped blazer top in black co-ord",
+            price:"£37.00",
+        },
+        {   
+            id:17,
+            img_url:"https://images.asos-media.com/products/missyempire-oversized-blazer-in-pink/203131019-1-pink?$n_480w$&wid=476&fit=constrain",
+            disc:"Missyempire oversized blazer in pink",
+            price:"£49.00",
+        },
+        {
+            id:18 ,
+            img_url:"https://images.asos-media.com/products/asos-design-tux-suit-straight-leg-trouser-in-ivory/202350698-1-ivory?$n_480w$&wid=476&fit=constrain",
+            disc:"ASOS DESIGN tux suit straight leg trouser in ivory",
+            price:"£42.00",
+        },
+        {
+            id:19,
+            img_url:"https://images.asos-media.com/products/asos-design-jersey-slouchy-suit-blazer-in-black/201672717-1-black?$n_480w$&wid=476&fit=constrain",
+            disc:"ASOS DESIGN jersey slouchy suit blazer in black",
+            price:"£32.00",
+        },
+        {
+            id:20,
+            img_url:"https://images.asos-media.com/products/jdy-blazer-in-mushroom/203367566-1-grey?$n_480w$&wid=476&fit=constrain",
+            disc:"JDY blazer in mushroom",
+            price:"£32.00",
+        },
+        
+        
+        
+
+
+        
+
+
+    ]
+    womenData.forEach(function(el,index){
+        //console.log(el)
+        //event.preventDefault()
+            let card=document.createElement("div")
+            let productImg=document.createElement("img")
+            productImg.src=el.img_url
+            let atag=document.createElement("a")
+            atag.href="showPage.html"
+            atag.append(productImg)
+             atag.addEventListener("click",()=>{cardData(el)})
+           
+            
+            let decsription=document.createElement("p")
+            decsription.innerText=el.disc
+            let price=document.createElement("h3")
+            price.innerText=el.price
+            card.append(atag,decsription,price)
+            document.querySelector("#teamTail").append(card)
+          //console.log(index);
+          
+        });
+        console.log(womenData);
+        function cardData (index){
+            //console.log(index)
+            localStorage.setItem("selectedSuite", JSON.stringify(index))
+            //return;
+        }
+    //    event.preventDefault()
+
+</script>
