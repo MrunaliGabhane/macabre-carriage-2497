@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .account-page{
+            padding: 50px 0;
+            background:grey;
+
+        }
+        .form-container{
+            background: white;
+            width: 300px;
+            height: 400px;
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            margin: auto;
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .form-container span{
+            font-weight: bold;
+            padding: 0 10px;
+            color: #555;
+            cursor: pointer;
+            width: 100px;
+            display: inline-block;
+
+        }
+        .form-btn{
+            display: inline-block;
+
+        }
+        .form-container form{
+            max-width: 230px;
+            padding:0 20px ;
+            position: absolute;
+            top: 130px;
+            transition: transform 1s;
+        }
+        form input{
+            width: 100%;
+            height: 30px;
+            margin: 10px 0;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+        } 
+        form .btn{
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        form .btn:focus{
+            outline: none;
+        }
+        #LoginForm{
+             left: -300px;
+
+        }
+        #RegForm{
+            left: 0;
+        }
+        /* #Indicator{
+           width: 100px;
+           border: none;
+           background: #ff523b;
+            height: 3px;
+            margin-top: 8px;
+            transform: translate(x);
+            transition: transform 1s;
+        } */
+    </style>
+</head>
+<body>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">SIGN IN</span>
+                            <span onclick="register()">Join</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <label for="fname">EMAIL ADDRESS:</label>
+                            <input type="email" placeholder="email" id="">
+                            <label for="fname">PASSWORD:</label>
+                            <input type="password" placeholder="password" id="">
+                            <button type="submit" class="btn">SIGN IN</button>
+                            <a href="">Forgot Password ?</a>
+
+                           </form>
+
+                        <form id="RegForm">
+                            <label for="fname">EMAIL ADDRESS:</label>
+                            <input type="email" placeholder="email" id="">
+                            <label for="fname">FIRST NAME:</label>
+                            <input type="text" placeholder="First Name" id="">
+                            <label for="fname">LAST NAME:</label>
+                            <input type="text" placeholder="Last Name" id="">
+                            <label for="fname">PASSWORD:</label>
+                            <input type="password" placeholder="password" id="">
+
+                            <button type="submit" class="btn">Register</button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var  RegForm = document.getElementById("RegForm");
+    var Indicator=document.getElementById("Indicator");
+
+    function register(){
+       RegForm.style.transform="translateX(0px)"
+       LoginForm.style.transform="translateX(0px)"
+       Indicator.style.transform="translateX(100px)"
+    }
+
+    function login(){
+       RegForm.style.transform="translateX(300px)"
+       LoginForm.style.transform="translateX(300px)"
+       Indicator.style.transform="translateX(0px)"
+    }
+</script>
