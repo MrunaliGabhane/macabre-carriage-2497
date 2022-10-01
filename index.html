@@ -5,11 +5,548 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>asos</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+    <style>
+         #header1{
+            display: flex;
+            width: 100%;
+            height: 35px;
+            margin: auto;
+            /* border: 1px solid red; */
+            justify-content: flex-end;
+            align-items: center;
+            
+        }
+        #header1>div{
+            display: flex;
+            height: 100%;
+            width: auto;            
+            /* border: 1px solid yellow; */
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 30px;
+        }
+        /* #header1 div{
+            margin-right: 100px;
+        } */
+        #navbar1 div a{
+            color: grey;
+            width: 100%;
+            text-decoration: none;
+            text-align: center;
+        }
+        #navbar2{
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 70px;
+            margin: auto;
+            /* border: 1px solid red; */
+            background-color: #2d2d2d;
+        }
+        #navbar2 > div{
+            /* width:20%;
+            height: 100%;
+            border: 1px solid blue; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #left{
+            width: 20%;
+            height: 100%;
+            /* border: 1px solid blue; */
+        }
+        #left>div{
+            width: auto;
+            height: 100%;
+            /* border: 1px solid yellow; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #head a{
+        font-size: 40px;
+        text-decoration: none;
+    }
+        
+        #right{
+            width: 10%;
+            height: 100%;
+            /* border: 1px solid blue; */
+        }
+        /* #center{
+            display: flex;
+            width: auto;
+            height: auto;
+            /* border: 1px solid blue; */
+            /* justify-content: center; */
+        
+        #right>div{
+            width: 50px;
+            height: 100%;
+            /* border: 1px solid yellow; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        /* #center>div{
+            width: auto;
+            height: 100%;
+            /* border: 1px solid yellow; */
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+        } */ */
+        .top a{
+            color: grey;
+        }
+        #left a{
+            color: white;
+            font-weight: 200;
+        font-size: larger;
+        text-decoration: none;
+        }
+        #center{
+            width: 50%;
+            height: 70%;
+            border: 1px solid white;
+        }
+        /* #center a{
+            color: white;
+            font-weight: 200;
+        font-size: larger;
+        text-decoration: none;
+        } */
+        #right a{
+            color: white;
+            font-weight: 200;
+            font-size: larger;
+            text-decoration: none;
+        }
+      #flag{
+        border-radius: 50%;
+        height: 20px;
+      }
+      #header3{
+        width: 100%;
+        height: 40px;
+        margin: auto;
+        /* border: 1px solid red; */
+        background-color: #525050;
+        display: flex;
+      }
+      #header3 div{
+        display: flex;
+        /* border: 1px solid blue; */
+      }
+      #header3 div:nth-child(1){
+        margin-left: 15%;
+     }
+      .btm a{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+      }
+      #head{
+        font-size: 40px;
+      }
+      #footer{
+        width: 100%;
+        height: auto;
+        /* border: 1px solid red; */
+        background-color: #eeeeee;
+      }
+      #bottom{
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding: 20px;
+        
+    }
+      #bottom > div{
+        width: 30%;
+        height: auto;
+        /* border: 1px solid red; */
+        line-height: 30px;
+        justify-content: space-around;
+      }
+      .color a{
+        color: #666768;
+        text-decoration: none;
+      }
+      #dis1{
+       display : grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+      #dis1 > div{
+        display: flex;
+        /* border: 1px solid rgb(222, 12, 180); */
+        justify-content: center;
+        align-items:center ;
+
+      }
+      #discount{
+        background-color: #9cf0e0;
+        
+      }
+      #delivery{
+        background-color: black;
+        color: white;
+      }
+      #dis2{
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        background-color:#9cf0e0; 
+        margin-top: 3px;
+        padding-top: 2px;
+        padding-bottom: 10px;
+      }
+     
+     #searchbox{
+        width: 100%;
+      }
+      .mainhed:hover{
+        background-color:#666768; 
+
+      }
+      .btm:hover{
+        background-color: white;
+        color: black;
+      }
+      .btm a:hover{
+        color: gray;
+      }
+      .top a:hover{
+        color: blue;
+      }
+      #container{
+        width: 80%;
+        height: auto;
+        margin:auto;
+      }
+      #containerMainImg{
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding: 50px;
+      }
+      #containerMainImg img{
+        width: 100%;
+        height: auto;
+      }
+      #imgcontainer{
+        width: 80%;
+        margin: auto;
+        display : flex;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        /* border: 1px solid black; */
+        justify-content: space-between;
+
+      }
+      #imgcontainer div{
+         width: 20%;
+        height: auto;
+        /* border: 1px solid red */
+      }
+      #imgcontainer div img{
+         width:100% ;
+      }
+      .imgStyle > a{
+        color: black;
+        text-decoration: none;
+        text-align: center;
+      }
+      #logo{
+         display: grid;
+         grid-template-columns: repeat(6,1fr);
+         width: 80%;
+         margin: auto;
+         /* border: 1px solid red; */
+      }
+      #logoHeading>h1{
+           text-align: center;
+      }
+      #logo>div>a>img{
+        width: 90%;
+      }
+      #icon{
+        display: flex;
+        grid-template-columns: repeat(8,1fr);
+        width: 70%;
+        height: 50px;
+        margin: auto;
+        /* border: 1px solid red; */
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      #icon>div>img{
+        width: 50%;
+        height: 30px;
+        /* border: 1px dotted yellowgreen; */
+        display: flex;
+        margin: 20px;
+     }
+     .br>img{
+        border-radius: 50%;
+     }
+     #line>p{
+        height: 21px;
+        border: 1px solid grey;
+     }
+
+    </style>
 </head>
 <body>
     
+    <section >
+        <div id="header1">
+           <div class="top">
+            <a href="marketplace.html">Marketplace</a>
+           </div>
+           <div class="top">
+            <a href="marketplace.html">Help & FAQs</a>
+           </div>
+           <div class="top">
+            <a href="custmer.html"><img id="flag" src="https://cdn.pixabay.com/photo/2016/08/24/17/07/india-1617463__340.png"></a>
+           </div>
+        </div>
+    </section>
+    <div id="navbar2">
+        <div  id="left">
+            <div id="head" class="mainhed">
+                <a href="women.html">asos</a>
+            </div>
+            <div class="mainhed"> <a href="women.html">WOMEN</a></div>
+            <div class="mainhed"><a href="men.html">MEN</a></div>
+        </div>
+        <div id="center">
+            <div  >
+                <input  id="searchbox" type="text" placeholder="Search for items ans brands">
+            </div>
+        </div>
+        <div id="right">
+            <div>
+                <a href="user.html"><i class="fa-regular fa-user"></i></a>
+            </div>
+            <div>
+                <a href="like.html"> <i class="fa-regular fa-heart"></i></a>
+            </div>
+            <div>
+                <a href="shopping.html"><i class="fa-light fa-bag-shopping"></i></a>
+            </div>
+           
+        </div>
+    </div>
+    <div id="header3">
+        <div></div>
+        <div class="btm">
+            <a href="sale.html">Sale</a>
+        </div>
+        <div class="btm">
+            <a href="newIn.html">New in</a>
+        </div>
+        <div class="btm">
+            <a href="clothing.html">Clothing</a>
+        </div>
+        <div class="btm">
+            <a href="shoes.html">Shoes</a>
+        </div>
+        <div class="btm">
+            <a href="sportswear.html">sportswear</a>
+        </div>
+        <div class="btm">
+            <a href="accessories.html">Accessories</a>
+        </div>
+        <div class="btm">
+            <a href="trending.html">Trending now</a>
+        </div>
+        <div class="btm">
+            <a href="topShop.html">Top Shop</a>
+        </div>
+        <div class="btm">
+            <a href="faceBody.html">Face + Body</a>
+        </div>
+        <div class="btm">
+            <a href="brand.html">Brand</a>
+        </div>
+        <div class="btm">
+            <a href="outlet.html">Outlet</a>
+        </div>
+        <div class="btm">
+            <a href="marketplace.html">Marketplace</a>
+        </div>
+    </div>
+    <div id="dis1">
+        <div id="discount">
+            <h3>UP TO 50% OFF COSY GARMS</h3>
+        </div>
+        <div id="delivery">
+            <h3>FREE WORLDWIDE DELIVERY</h3>
+        </div>
+    </div>
+    <div id="dis2">
+        <h1>UP TO 50% OFF COSY GARMS</h1>
+        <p>Limited time only, Selected styles marked down as shown.</p>
+    </div>
+    <div id="containerMainImg">
+        <a href="womenAtoZ.html"><img src="https://content.asos-media.com/-/media/homepages/ww/2022/sept/12/hero/topshop/topshop_ww-hp-hero_desktop.jpg">
+        </a>
+    </div>
+    <div id="imgcontainer">
+        <div class="imgStyle">
+            <a href="teamTailored.html"><img src="https://content.asos-media.com/-/media/homepages/ww/2022/sept/26/moments/ww_global_ultimate_tailoring_moment_870x1110.jpg">
+                <h3>TEAM Tailored</h3>
+                <p>Executive realness</p>
+            </a>
+            
+        </div>
+        <div class="imgStyle">
+            <a href="sceneStealers.html"> <img src="https://content.asos-media.com/-/media/homepages/ww/2022/sept/26/moments/ww_global_corsage_dressing_moment_870x1110.jpg">
+                <h3>SCENE STEALERS</h3>
+                <p>Corset cuts</p>
+            </a>
+           
+        </div>
+        <div class="imgStyle">
+            <a href="riseShine.html"> <img src="https://content.asos-media.com/-/media/homepages/ww/2022/sept/26/moments/ww_global_colour_and_shine_pu_moment_870x1110.jpg">
+                <h3>RISE 'N' SHINE</h3>
+                <p>PU for you</p>
+            </a>
+           
+        </div>
+        <div class="imgStyle">
+            <a href="clubcore.html">
+                <img src="https://content.asos-media.com/-/media/homepages/ww/2022/sept/26/hero/tstm_refresh3_mob_ww_v2.png">
+            <h3>CLUBCORE ROMANCE</h3>
+            <p>Going OUT-out with ASOS DESIGN</p>
+            </a>
+            
+        </div>
+    </div>
+    <div id="logosection">
+        <div id="logoHeading">
+            <h1>TRENDING BRANDS</h1>
+        </div>
+        <div id="logo">
+            <div >
+                <a href="logo1.html"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/monkl-hp-logos-256x256.jpg"></a>
+              </div>
+              <div >
+                 <a href="logo2.html"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/never-fully-dressed-hp-logos-256x256.png"></a>
+              </div>
+              <div >
+                 <a href="logo3.htnl"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/1x12x---test.png"></a>
+              </div>
+              <div >
+                 <a href="logo4.html"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/reclaimed-vintage-hp-logos-256x256.jpg"></a>
+              </div>
+              <div>
+                 <a href="logo5.html"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/collusion-hp-logos-256x256.jpg"></a>
+              </div>
+              <div >
+                 <a href="logo6.html"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/weekday-hp-logos-256x256.jpg"></a>
+              </div>
+        </div>
+         
+
+    </div>
+    <div id="icon">
+        <div class="br">
+            <img src="https://cdn.siasat.com/wp-content/uploads/2021/01/1200-900-Facebook.jpg"> 
+        </div>
+        <div class="br">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH3NGue2P-VbAgGT-iezxPMXaonEDSiFUrWQ&usqp=CAU">
+        </div>
+        <div class="br">
+            <img src="https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo">
+        </div>
+        <div id="line">
+             <p></p>
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png">
+        </div>
+        <div>
+            <img src="https://media.wired.com/photos/5926dea77034dc5f91bece36/master/w_1600%2Cc_limit/Mastercard3-1.jpg">
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784403__340.png">
+        </div>
+        <div>
+            <img src="https://play-lh.googleusercontent.com/lKebetEHVDuBrbq5KJJ4MK6V6BaFuo0Mj9Qy9YZkoenrEDZVU-IzLrbAuoKMaCT4nA">
+        </div>
+        <div>
+            <img src="https://play-lh.googleusercontent.com/lKebetEHVDuBrbq5KJJ4MK6V6BaFuo0Mj9Qy9YZkoenrEDZVU-IzLrbAuoKMaCT4nA">
+        </div>
+
+    </div>
+    
+    <section id="footer">
+    <div id="bottom">
+        <div>
+            <div class="color">
+                <a href="helpInfo.html">HELP & INFORMATION</a>
+            </div>
+            <div class="color">
+                <a href="help.html">Help</a>
+            </div>
+            <div class="color">
+                <a href="trackOrder.html">Track order</a>
+            </div>
+            <div class="color">
+                <a href="delivery.html">Delivery & returns</a>
+            </div>
+        </div>
+        <div>
+            <div class="color">
+                <a href="aboutAsos.html">ABOUT ASOS</a>
+            </div>
+            <div class="color">
+                <a href="aboutUs.html">About us</a>
+            </div>
+            <div class="color">
+                <a href="career.html">Careers at ASOS</a>
+            </div>
+            <div class="color">
+                <a href="corporate.html">Corporate responsibility</a>
+            </div>
+            <div class="color">
+                <a href="investors.html">Investors' site</a>
+            </div>
+        </div>
+        <div>
+            <div class="color">
+                <a href="morandAsos.html">MORE FROM ASOS</a>
+            </div>
+            <div class="color">
+                <a href="mbl">Mobile and ASOS apps</a>
+            </div>
+            <div class="color">
+                <a href="marketplace.html">Mobile and ASOS apps</a>
+            </div>
+            <div class="color">
+                <a href="gift.html">Gift vouchers</a>
+            </div>
+            <div class="color">
+                <a href="blackFriday">Black Friday</a>
+            </div >
+            <div class="color">
+                <a href="asosXThrift.html">ASOS x Thrift+</a>
+            </div>
+        </div>
+         <div class="color">
+            <a href="shopping.html">SHOPPING FROM:</a>
+            <p></p>
+         </div>
+     </div>
+    </section>
 </body>
 </html>
-
-
-

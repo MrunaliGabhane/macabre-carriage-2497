@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>asos</title>
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"></script>
     <style>
@@ -294,6 +294,8 @@
     }
     #teamTail{
         display: grid;
+        width: 90%;
+        margin: auto;
         grid-template-columns: repeat(4,1fr);
         gap: 20px;
 
@@ -301,6 +303,44 @@
     #teamTail>div>a>img{
         width: 100%;
     }
+    #logo{
+         display: grid;
+         grid-template-columns: repeat(6,1fr);
+         width: 80%;
+         margin: auto;
+         /* border: 1px solid red; */
+      }
+      #logoHeading>h1{
+           text-align: center;
+      }
+      #logo>div>a>img{
+        width: 90%;
+      }
+      #icon{
+        display: flex;
+        grid-template-columns: repeat(8,1fr);
+        width: 70%;
+        height: 50px;
+        margin: auto;
+        /* border: 1px solid red; */
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      #icon>div>img{
+        width: 50%;
+        height: 30px;
+        /* border: 1px dotted yellowgreen; */
+        display: flex;
+        margin: 20px;
+     }
+     .br>img{
+        border-radius: 50%;
+     }
+     #line>p{
+        height: 21px;
+        border: 1px solid grey;
+     }
+
    </style>
 </head>
 <body>
@@ -455,6 +495,64 @@
        <div id="teamTail">
 
        </div>
+       <div id="logosection">
+        <div id="logoHeading">
+            <h1>TRENDING BRANDS</h1>
+        </div>
+        <div id="logo">
+            <div >
+                <a href="logo1.html"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/monkl-hp-logos-256x256.jpg"></a>
+              </div>
+              <div >
+                 <a href="logo2.html"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/never-fully-dressed-hp-logos-256x256.png"></a>
+              </div>
+              <div >
+                 <a href="logo3.htnl"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/1x12x---test.png"></a>
+              </div>
+              <div >
+                 <a href="logo4.html"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/reclaimed-vintage-hp-logos-256x256.jpg"></a>
+              </div>
+              <div>
+                 <a href="logo5.html"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/collusion-hp-logos-256x256.jpg"></a>
+              </div>
+              <div >
+                 <a href="logo6.html"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/weekday-hp-logos-256x256.jpg"></a>
+              </div>
+        </div>
+         
+
+    </div>
+    <div id="icon">
+        <div class="br">
+            <img src="https://cdn.siasat.com/wp-content/uploads/2021/01/1200-900-Facebook.jpg"> 
+        </div>
+        <div class="br">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH3NGue2P-VbAgGT-iezxPMXaonEDSiFUrWQ&usqp=CAU">
+        </div>
+        <div class="br">
+            <img src="https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo">
+        </div>
+        <div id="line">
+             <p></p>
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png">
+        </div>
+        <div>
+            <img src="https://media.wired.com/photos/5926dea77034dc5f91bece36/master/w_1600%2Cc_limit/Mastercard3-1.jpg">
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784403__340.png">
+        </div>
+        <div>
+            <img src="https://play-lh.googleusercontent.com/lKebetEHVDuBrbq5KJJ4MK6V6BaFuo0Mj9Qy9YZkoenrEDZVU-IzLrbAuoKMaCT4nA">
+        </div>
+        <div>
+            <img src="https://play-lh.googleusercontent.com/lKebetEHVDuBrbq5KJJ4MK6V6BaFuo0Mj9Qy9YZkoenrEDZVU-IzLrbAuoKMaCT4nA">
+        </div>
+
+    </div>
+
     <section id="footer">
         <div id="bottom">
             <div>
@@ -672,10 +770,10 @@
         });
         console.log(womenData);
         function cardData (index){
-            //console.log(index)
+            //console.log(index[])
             localStorage.setItem("selectedSuite", JSON.stringify(index))
             //return;
         }
     //    event.preventDefault()
-
+   
 </script>
