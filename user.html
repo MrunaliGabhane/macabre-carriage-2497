@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User Page</title>
     <style>
         .account-page{
             padding: 50px 0;
@@ -92,9 +92,9 @@
                         </div>
                         <form id="LoginForm">
                             <label for="fname">EMAIL ADDRESS:</label>
-                            <input type="email" placeholder="email" id="">
+                            <input type="email" placeholder="email" id="email1">
                             <label for="fname">PASSWORD:</label>
-                            <input type="password" placeholder="password" id="">
+                            <input type="password" placeholder="password" id="password1">
                             <button type="submit" class="btn">SIGN IN</button>
                             <a href="">Forgot Password ?</a>
 
@@ -102,13 +102,13 @@
 
                         <form id="RegForm">
                             <label for="fname">EMAIL ADDRESS:</label>
-                            <input type="email" placeholder="email" id="">
+                            <input type="email" placeholder="email" id="email2">
                             <label for="fname">FIRST NAME:</label>
-                            <input type="text" placeholder="First Name" id="">
+                            <input type="text" placeholder="First Name" id="firstName">
                             <label for="fname">LAST NAME:</label>
-                            <input type="text" placeholder="Last Name" id="">
+                            <input type="text" placeholder="Last Name" id="lastName">
                             <label for="fname">PASSWORD:</label>
-                            <input type="password" placeholder="password" id="">
+                            <input type="password" placeholder="password" id="password2">
 
                             <button type="submit" class="btn">Register</button>
                             
@@ -136,4 +136,6 @@
        LoginForm.style.transform="translateX(300px)"
        Indicator.style.transform="translateX(0px)"
     }
+   console.log(document.getElementById("LoginForm"))
+   console.log(document.getElementById("RegForm"))
 </script>
